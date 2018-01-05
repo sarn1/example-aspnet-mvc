@@ -67,3 +67,7 @@ ViewBag.artists = new string[]
 ```
 - Instead of using the `ViewBag` method, you can make comicBook be a **strongly typed view**.  To make the view strongly typed, go to the view and add `@model ComicBookGallery.Models.ComicBook`.  See **Details.cshtml**.
 - Doing it this way allows the intellisense to work.
+```csharp
+//sometimes you need to wrap a Razor statement in parenthesis
+@(Model.Favorite ? "Yes" : "No")
+```
