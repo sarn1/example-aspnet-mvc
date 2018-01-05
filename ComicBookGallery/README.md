@@ -28,7 +28,8 @@
     }
 ```
 - URL routing is controller/action
-- `ContentResult` and `RedirectResult` are a type of action result type.
+- `ContentResult`, `ViewResult`, and `RedirectResult` are a type of action result type.
 - Had to modify the return type to `ActionResult`.  In order to find out that was the correct type to return that works for both `ContentResult` and `RedirectResult` you can hover over those types and click on F12 (to view the code) or ALT+F12 (to peek the code).
 
-### 
+### Adding View ###
+- In **View** folder right click Add > MVC 5 View Page (Razor)
