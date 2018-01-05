@@ -50,3 +50,14 @@ https://teamtreehouse.com/library/aspnet-mvc-basics
 ### Adding Data Model ###
 - Data modeling is the noun in a website
 - Models > ComicBooks.cs
+```csharp
+ViewBag.artists = new string[]
+{
+    "Script: Dan Slott",
+    "Pencils: Humberto Ramos",
+    "Inks: Victor Olazaba",
+    "Colors: Edgar Delgado",
+    "Letters: Chris Eliopoulos"
+};
+```
+- Since the data in artists appears to be the artist and a role, we can break this down into an artist model 
