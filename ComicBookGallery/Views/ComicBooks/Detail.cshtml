@@ -1,5 +1,18 @@
-﻿@{
-    Layout = null;
+﻿@{  
+    //@ tells editor we want to use C#.
+    Layout = null; //path to the "shared" layout page
+
+    var seriesTitle = "The Amazing Spider-Man";
+    var issueNumber = 700;
+    var description = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>";
+    var artists = new string[]
+    {
+        "Script: Dan Slott",
+        "Pencils: Humberto Ramos",
+        "Inks: Victor Olazaba",
+        "Colors: Edgar Delgado",
+        "Letters: Chris Eliopoulos"
+    };
 }
 
 <!DOCTYPE html>
@@ -11,7 +24,24 @@
 </head>
 <body>
     <div>
-        <h1>Hello from view</h1>
+        <h1>@seriesTitle</h1>
+        <h2>Issue #@issueNumber</h2>
+        <div>@Html.Raw(description)</div>
+
+        @if (artists.Length > 0)
+        {
+            <h5>Artists</h5>
+            <div>
+                <ul>
+                    @foreach (var artist in artists)
+                    {
+                        <text><!-- @artist --></text>
+                        <li>@artist</li>
+                    }
+                </ul>
+            </div>
+        }
+
     </div>
 </body>
 </html>
