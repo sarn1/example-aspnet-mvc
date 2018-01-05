@@ -37,4 +37,6 @@ https://teamtreehouse.com/library/aspnet-mvc-basics
 - You may need to create a folder for each controller and have the view be inside that folder. See **View/ComicBooks/Detail.cshtml**
 - **Razor** is a view language allowing you to create views by combining C# and HMTL.
 - For Razor, you can edit without having to recompile.
-
+- `ViewBag` is an object built into MVC that allows you to pass data from a controller to a view.  See **Controller/ComicBooksController.cs**
+- Using a dynamic type like `ViewBag` you don't get intellisense in the view when developing using Razor.
+- ViewBag variables are not case-sensitive.
