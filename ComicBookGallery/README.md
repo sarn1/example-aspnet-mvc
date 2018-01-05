@@ -43,4 +43,10 @@ https://teamtreehouse.com/library/aspnet-mvc-basics
 
 ### Add Third Party Files ###
 - Once you add it in the root of the project, you'll need to click on the [Show All Files](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjvn9X558HYAhUvYt8KHXnrBUkQjRwIBw&url=http%3A%2F%2Fwww.global-webnet.com%2Fblog%2Fpost%2F2012%2F08%2F21%2FCpp-WhereAreFolders-Filters.aspx&psig=AOvVaw11JibuGpt8y1jSgXByPHSd&ust=1515275683427298) icon to see it in Visual Studios
-- 
+```csharp
+//generates a link in Razor
+@Html.ActionLink("Comic Book Gallery", "Index", "ComicBooks", new { area = "" }, new { @class = "navbar-brand" })
+```
+### Adding Data Model ###
+- Data modeling is the noun in a website
+- Models > ComicBooks.cs
