@@ -16,7 +16,8 @@
 
 ### Adding Action Method ###
 - Methods need to be public so its accessible.
-- http://localhost:62466/ComicBooks/Detail
+- http://localhost:62466/ComicBooks/Detail via **ComicBooksController.cs**
+- http://localhost:62466/Sarn/Test via **Sarn.Controller.cs**
 ```csharp
     public class ComicBooksController : Controller
     {
@@ -26,5 +27,8 @@
         }
     }
 ```
+- URL routing is controller/action
+- `ContentResult` and `RedirectResult` are a type of action result type.
+- Had to modify the return type to `ActionResult`.  In order to find out that was the correct type to return that works for both `ContentResult` and `RedirectResult` you can hover over those types and click on F12 (to view the code) or ALT+F12 (to peek the code).
 
 ### 
