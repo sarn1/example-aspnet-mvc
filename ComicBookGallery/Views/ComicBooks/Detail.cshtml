@@ -1,7 +1,9 @@
-﻿@{  
+﻿@model ComicBookGallery.Models.ComicBook
+
+@{
     //@ tells editor we want to use C#.
     Layout = "~/Views/Shared/_Layout.cshtml"; //path to the "shared" layout page
-    ViewBag.Title = "Comic Book Detail";
+    ViewBag.Title = Model.DisplayText; //shows in browser tab
 }
 
 <!DOCTYPE html>
@@ -13,19 +15,19 @@
 </head>
 <body>
     <div>
-        <h1>@ViewBag.SeriesTitle</h1>
-        <h2>Issue #@ViewBag.IssueNumber</h2>
-        <div>@Html.Raw(ViewBag.description)</div>
+        <h1>@Model.SeriesTitle</h1>
+        <h2>Issue #@Model.IssueNumber</h2>
+        <div>@Html.Raw(Model.DescriptionHtml)</div>
 
-        @if (ViewBag.Artists.Length > 0)
+        @if (Model.Artists.Length > 0)
         {
             <h5>Artists</h5>
             <div>
                 <ul>
-                    @foreach (var artist in ViewBag.Artists)
+                    @foreach (var artist in Model.Artists)
                     {
-                        <text><!-- @artist --></text>
-                        <li>@artist</li>
+                        <text><!-- @artist.Name --></text>
+                        <li>@artist.Role: @artist.Name</li>
                     }
                 </ul>
             </div>

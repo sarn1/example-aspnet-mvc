@@ -38,7 +38,7 @@ https://teamtreehouse.com/library/aspnet-mvc-basics
 - **Razor** is a view language allowing you to create views by combining C# and HMTL.
 - For Razor, you can edit without having to recompile.
 - `ViewBag` is an object built into MVC that allows you to pass data from a controller to a view.  See **Controller/ComicBooksController.cs**
-- Using a dynamic type like `ViewBag` you don't get intellisense in the view when developing using Razor.
+- Using a dynamic type like `ViewBag` you don't get intellisense in the view when developing using Razor.  See **strongly typed view below**
 - ViewBag variables are not case-sensitive.
 
 ### Add Third Party Files ###
@@ -61,3 +61,9 @@ ViewBag.artists = new string[]
 };
 ```
 - Since the data in artists appears to be the artist and a role, we can break this down into an artist model 
+```csharp
+    // strongly typed view - by putting object into the view vs. ViewBag.ComicBook = comicBook;
+    return View(comicBook);  // will automatically look in the views folder
+```
+- Instead of using the `ViewBag` method, you can make comicBook be a **strongly typed view**.  To make the view strongly typed, go to the view and add `@model ComicBookGallery.Models.ComicBook`.  See **Details.cshtml**.
+- Doing it this way allows the intellisense to work.
