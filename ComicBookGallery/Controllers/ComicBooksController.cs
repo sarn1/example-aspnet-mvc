@@ -9,7 +9,6 @@ namespace ComicBookGallery.Controllers
 {
     public class ComicBooksController : Controller
     {
-
         public ActionResult Detail()
         {
             var comicBook = new ComicBook()
