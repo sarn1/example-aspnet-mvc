@@ -93,7 +93,17 @@ public ActionResult Detail(int? id)
 
 ### Set default page ###
 - **/App_Start/RouteConfig.cs** or Global.asax > right click `RouteConfig` > Goto Definition
+- Custom routes = non-default routes.
+```csharp
+<h4>@Html.ActionLink(@comicBook.DisplayText, "Detail", new { id = comicBook.Id })</h4>
+<a href="@Url.Action("Detail", new { id = comicBook.Id})">
+    <img src="/Images/@comicBook.CoverImageFileName"
+            alt="@comicBook.DisplayText"
+            class="img-responsive" />
+</a>
 
-
+// new { id = comicBook.Id }
+```
+- ^ Object initializer syntax 
 
 
