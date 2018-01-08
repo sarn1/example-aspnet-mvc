@@ -33,7 +33,7 @@ https://teamtreehouse.com/library/aspnet-mvc-basics
 - Had to modify the return type to `ActionResult`.  In order to find out that was the correct type to return that works for both `ContentResult` and `RedirectResult` you can hover over those types and click on F12 (to view the code) or ALT+F12 (to peek the code).
 
 ### Adding View ###
-- In **View** folder right click Add > MVC 5 View Page (Razor) to add a view.
+- In **View** folder right click Add > MVC 5 View Page (Razor) to add a view or right click on a controller method.
 - You may need to create a folder for each controller and have the view be inside that folder. See **View/ComicBooks/Detail.cshtml**
 - **Razor** is a view language allowing you to create views by combining C# and HMTL.
 - For Razor, you can edit without having to recompile.
@@ -85,4 +85,11 @@ foreach (var item in collection)
 // allow nullable
 public ActionResult Detail(int? id)
 ```
+
+### Debugger ###
+- F11 - Step Into
+- F10 - Step Over
+- Shift + F11 - Step Out
+
+
 
