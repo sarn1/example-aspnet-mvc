@@ -78,3 +78,11 @@ foreach (var item in collection)
 
 }
 ```
+- CTRL + ; = search project.
+- **constructor** can not have a return value and shares the same name as the class name.
+
+```csharp
+// allow nullable
+public ActionResult Detail(int? id)
+```
+

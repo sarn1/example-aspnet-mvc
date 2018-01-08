@@ -198,7 +198,6 @@
     <Content Include="obj\Debug\ComicBookGallery.csprojResolveAssemblyReference.cache" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="packages.config" />
-    <Content Include="README.md" />
     <Content Include="Views\ComicBooks\Detail.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
