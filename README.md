@@ -91,5 +91,9 @@ public ActionResult Detail(int? id)
 - F10 - Step Over
 - Shift + F11 - Step Out
 
+### Set default page ###
+- **/App_Start/RouteConfig.cs** or Global.asax > right click `RouteConfig` > Goto Definition
+
+
 
 
